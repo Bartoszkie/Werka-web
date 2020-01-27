@@ -121,6 +121,12 @@ footer {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .movie-box {
+    width: 100%;
+  }
+}
+
 .movie-box__shape {
   position: relative;
   overflow: hidden;
@@ -146,6 +152,13 @@ footer {
     transform: translateX(-2rem) skewX(0) scale(0.8);
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .movie-box__shape {
+    transform: translateX(-0.5rem) skewX(0) scale(0.8);
+  }
+}
+
 
 .movie-box img {
   height: 100%;
