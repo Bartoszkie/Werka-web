@@ -1,0 +1,279 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  background-color: rgba(71, 71, 71, 0.342);
+}
+
+.col-padding-right {
+  padding-right: 2rem !important;
+}
+
+.display-shadow {
+  text-shadow: 0.1px 0.1px 5px #000;
+}
+
+/*navigation styling*/
+
+.navbar {
+  padding: 0.8rem;
+}
+
+.navbar-brand img {
+  width: 60%;
+  transform: translateY(-10px);
+}
+
+.navbar-nav .nav-item {
+  padding: 0.5rem;
+  margin: 10px;
+}
+
+.navbar-nav .nav-item,
+.navbar-nav .dropdown-item {
+  font-size: 1.2rem;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+/*cards*/
+.card {
+  padding: 1rem;
+}
+
+/*carousel*/
+.carousel-inner img {
+  width: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+/*footer*/
+footer {
+  background-color: #000;
+  padding: 1rem;
+}
+
+/*table*/
+.fa-arrow-down {
+  color: #000;
+  text-shadow: 1px 1px 10px #000;
+}
+
+/*movie-box*/
+.movie-box {
+  border-radius: 3px;
+  padding: 2rem;
+  width: 75%;
+  margin: 3rem auto 0rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.267);
+  background-color: rgba(255, 255, 255, 0.075);
+  transform: skewX(-12deg);
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .movie-box {
+    transform: skewX(0deg);
+  }
+}
+
+.movie-box__shape {
+  position: relative;
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-0.6rem) skewX(12deg);
+
+  @supports(clip-path: polygon(00)) or (-webkit-clip-path: polygon(00)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      width: 15rem;
+      height: 15rem; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .movie-box__shape {
+    transform: translateX(-2rem) skewX(0) scale(0.8);
+  }
+}
+
+.movie-box img {
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  backface-visibility: hidden;
+  transition: all .5s;
+}
+
+.movie-box__description {
+  transform: skewX(12deg);
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .movie-box__description {
+    transform: skewX(0);
+    margin-top: 12rem;
+    text-align: justify;
+  }
+}
+
+.movie-box__image {
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  backface-visibility: hidden;
+  transition: all .5s;
+}
+
+.movie-box__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: all .5s;
+  backface-visibility: hidden;
+}
+
+.movie-box:hover .movie-box__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+
+.movie-box:hover .movie-box__img {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(3px) brightness(90%);
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .carousel-caption h1 {
+    font-size: 300%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 190%;
+  }
+
+  .display-4 {
+    font-size: 3rem;
+  }
+
+  .display-3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 130%;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .display-3 {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-nav .nav-item,
+  .navbar-nav .dropdown-item {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0px;
+  }
+
+  .carousel-caption {
+    top: 35%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 160%;
+  }
+
+  .carousel-caption h3 {
+    display: none;
+  }
+
+  .btn-carousel {
+    font-size: 1rem;
+  }
+
+  .carousel-indicators {
+    bottom: 5px;
+  }
+
+  .display-4 {
+    font-size: 1.9rem;
+    padding: 0 0.2rem;
+  }
+
+  .display-3 {
+    font-size: 2.6rem;
+  }
+}

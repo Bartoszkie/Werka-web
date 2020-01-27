@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harry Potter - przewodnik</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/styles-bootstrap-fix.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="../pages/index.html" class="navbar-brand font-weight-bold">
+                <img src="../assets/IMG/logo.png" alt="logo-pic">
+            </a>
+
+            <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
+                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Level one dropdown -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="nav-link dropdown-toggle">Menu</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+                            <li><a href="../pages/hronologia.html" class="dropdown-item">Hronologia</a></li>
+                            <li><a href="../pages/repertuar.html" class="dropdown-item">Repertuary</a></li>
+
+                            <li class="dropdown-divider"></li>
+
+                            <!-- Level two dropdown-->
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Saga</a>
+                                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                                    <li>
+                                        <a tabindex="-1" href="#" class="dropdown-item">Kamień Filozofów</a>
+                                    </li>
+
+                                    <!-- Level three dropdown-->
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false"
+                                            class="dropdown-item dropdown-toggle">Komnata Tajemnic</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                                            <li><a href="#" class="dropdown-item">Ciekawostka 1</a></li>
+                                            <li><a href="#" class="dropdown-item">Ciekawostka 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- End Level three -->
+
+                                    <li><a href="#" class="dropdown-item">Więzień Askabanu</a></li>
+                                    <li><a href="#" class="dropdown-item">Czara Ognia</a></li>
+                                    <li><a href="#" class="dropdown-item">Zakon Feniksa</a></li>
+                                    <li><a href="#" class="dropdown-item">Insygnia Śmierci cz.1</a></li>
+                                    <li><a href="#" class="dropdown-item">Insygnia Śmierci cz.2</a></li>
+                                </ul>
+                            </li>
+                            <!-- End Level two -->
+                        </ul>
+                    </li>
+                    <!-- End Level one -->
+                    <li class="nav-item"><a href="../pages/about-us.html" class="nav-link">O nas</a></li>
+                    <li class="nav-item"><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="display-3">Zapraszamy do współpracy!</h3>
+                <p class="mt-4">Jeśli masz jakieś pytania, sugestie lub chesz z nami pracować, zapytaj nas za pomocą
+                    poniższego formularza, a na pewno się odezwiemy!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-md-12">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Adres Email</label>
+                            <input type="email" class="form-control" placeholder="jan.kowalski@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">Imię</label>
+                            <input type="text" class="form-control" placeholder="Jan">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress2">Nazwisko</label>
+                            <input type="text" class="form-control" placeholder="Kowalski">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Miasto</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Województwo</label>
+                            <select class="form-control">
+                                <option selected>Wybierz:</option>
+                                <option>Podkarpackie</option>
+                                <option>Małopolskie</option>
+                                <option>Lubuskie</option>
+                                <option>Wielkopolskie</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Numer Telefonu</label>
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Wiadomość:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label" for="gridCheck">
+                                Wyrażam zgodę na przetwarzanie moich danych osobowych
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="mt-5">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h4>Creators</h4>
+                    <hr class="light">
+                    <p>Wronika Grzebień</p>
+                    <p>Wronika Grzebień</p>
+                    <p>Wronika Grzebień</p>
+                    <p>Wronika Grzebień</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Contact</h4>
+                    <hr class="light">
+                    <p>111-111-111</p>
+                    <p>harrycrew@email.com</p>
+                    <p>3/4 London station</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light">
+                    <h5>&copy; harrypotterguide.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
