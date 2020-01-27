@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+.splitted {
+  letter-spacing: 5px;
+} 
+
 body {
   box-sizing: border-box;
 }
@@ -94,6 +98,7 @@ hr {
 /*footer*/
 footer {
   background-color: #000;
+  color: whitesmoke;
   padding: 1rem;
 }
 
@@ -101,6 +106,11 @@ footer {
 .fa-arrow-down {
   color: #000;
   text-shadow: 1px 1px 10px #000;
+}
+
+.container-custom {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /*movie-box*/
@@ -159,7 +169,6 @@ footer {
   }
 }
 
-
 .movie-box img {
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
@@ -212,6 +221,8 @@ footer {
   filter: blur(3px) brightness(90%);
 }
 
+/*gallery*/
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .carousel-caption h1 {
@@ -230,6 +241,7 @@ footer {
     font-size: 4rem;
   }
 }
+
 @media (max-width: 768px) {
   .carousel-caption {
     top: 45%;

@@ -1,7 +1,4 @@
 $(function() {
-  // ------------------------------------------------------- //
-  // Multi Level dropdowns
-  // ------------------------------------------------------ //
   $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
     event.preventDefault();
     event.stopPropagation();

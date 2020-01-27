@@ -43,29 +43,23 @@
                             <!-- Level two dropdown-->
                             <li class="dropdown-submenu">
                                 <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Saga</a>
+                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Galeria</a>
                                 <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
                                     <li>
-                                        <a tabindex="-1" href="#" class="dropdown-item">Kamień Filozofów</a>
+                                        <a tabindex="-1" href="./gallery.html" class="dropdown-item">Galeria główna</a>
                                     </li>
 
                                     <!-- Level three dropdown-->
                                     <li class="dropdown-submenu">
                                         <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false"
-                                            class="dropdown-item dropdown-toggle">Komnata Tajemnic</a>
+                                            class="dropdown-item dropdown-toggle">Wybrane</a>
                                         <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
-                                            <li><a href="#" class="dropdown-item">Ciekawostka 1</a></li>
-                                            <li><a href="#" class="dropdown-item">Ciekawostka 2</a></li>
+                                            <li><a href="./ciekaw-1-g.html" class="dropdown-item">Ciekawostka 1</a></li>
+                                            <li><a href="./ciekaw-2-g.html" class="dropdown-item">Ciekawostka 2</a></li>
                                         </ul>
                                     </li>
                                     <!-- End Level three -->
-
-                                    <li><a href="#" class="dropdown-item">Więzień Askabanu</a></li>
-                                    <li><a href="#" class="dropdown-item">Czara Ognia</a></li>
-                                    <li><a href="#" class="dropdown-item">Zakon Feniksa</a></li>
-                                    <li><a href="#" class="dropdown-item">Insygnia Śmierci cz.1</a></li>
-                                    <li><a href="#" class="dropdown-item">Insygnia Śmierci cz.2</a></li>
                                 </ul>
                             </li>
                             <!-- End Level two -->
@@ -73,7 +67,7 @@
                     </li>
                     <!-- End Level one -->
                     <li class="nav-item"><a href="../pages/about-us.html" class="nav-link">O nas</a></li>
-                    <li class="nav-item"><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="../pages/contact.html" class="nav-link">Kontakt</a></li>
                 </ul>
             </div>
         </div>
@@ -98,16 +92,15 @@
     </div>
 
     <!--table-->
-    <div class="container">
-
+    <div class="container container-custom">
 
         <div class="table-responsive mt-5" id="table">
             <table class="table table-hover table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">Tytuł</th>
-                        <th scope="col">Kiedy</th>
-                        <th scope="col">Gdzie</th>
+                        <th scope="col" class="text-center">Kiedy</th>
+                        <th scope="col" class="text-center">Gdzie</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -115,57 +108,265 @@
                         <th scope="row">
                             Harry Potter i Kamień Filozofów
                         </th>
-                        <td>12.02.2020</td>
-                        <td>Helios, Multikino</td>
+                        <td class="text-center">12.02.2020</td>
+                        <td class="text-center">
+                            <button type="button" class="btn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Helios
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Dostępność rezerwacji</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rezerwacja możliwa
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Zamknij</button>
+                                            <button type="button" class="btn btn-success">Rezerwuj</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             Harry Potter i Komnata Tajemnic
                         </th>
-                        <td>14.02.2020</td>
-                        <td>Multikino</td>
+                        <td class="text-center">14.02.2020</td>
+                        <td class="text-center my-auto">
+                            <button type="button" class="btn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Multikino
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Dostępność rezerwacji</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rezerwacja możliwa
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Zamknij</button>
+                                            <button type="button" class="btn btn-success">Rezerwuj</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             Harry Potter i Czara Ognia
                         </th>
-                        <td>1.03.2020</td>
-                        <td>Multikino</td>
+                        <td class="text-center">1.03.2020</td>
+                        <td class="text-center">
+                            <button type="button" class="btn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Multikino
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Dostępność rezerwacji</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rezerwacja możliwa
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Zamknij</button>
+                                            <button type="button" class="btn btn-success">Rezerwuj</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             Harry Potter i Komnata Tajemnic
                         </th>
-                        <td>20.05.2020</td>
-                        <td>Helios, Multikino</td>
+                        <td class="text-center">20.05.2020</td>
+                        <td class="text-center">
+                            <button type="button" class="btn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Multikino
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Dostępność rezerwacji</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rezerwacja możliwa
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Zamknij</button>
+                                            <button type="button" class="btn btn-success">Rezerwuj</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             Harry Potter i Czara Ognia
                         </th>
-                        <td>21.07.2020</td>
-                        <td>Helios</td>
+                        <td class="text-center">21.07.2020</td>
+                        <td class="text-center">
+                            <button type="button" class="btn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Helios
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Dostępność rezerwacji</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rezerwacja możliwa
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Zamknij</button>
+                                            <button type="button" class="btn btn-success">Rezerwuj</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             Harry Potter Maraton
                         </th>
-                        <td>22.04.2020</td>
-                        <td>Helios</td>
+                        <td class="text-center">22.04.2020</td>
+                        <td class="text-center">
+                            <button type="button" class="btn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Multikino
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Dostępność rezerwacji</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rezerwacja możliwa
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Zamknij</button>
+                                            <button type="button" class="btn btn-success">Rezerwuj</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             Harry Potter i Insygnia Śmierci cz.1, cz.2
                         </th>
-                        <td>3.03.2020</td>
-                        <td>Multikino</td>
+                        <td class="text-center">3.03.2020</td>
+                        <td class="text-center">
+                            <button type="button" class="btn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Multikino
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Dostępność rezerwacji</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rezerwacja możliwa
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Zamknij</button>
+                                            <button type="button" class="btn btn-success">Rezerwuj</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             Harry Potter Maraton
                         </th>
-                        <td>22.05.2020</td>
-                        <td>Helios</td>
+                        <td class="text-center">22.05.2020</td>
+                        <td class="text-center">
+                            <button type="button" class="btn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Multikino
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Dostępność rezerwacji</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rezerwacja prawie niemożliwa
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Zamknij</button>
+                                            <button type="button" class="btn btn-success">Rezerwuj!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -177,7 +378,7 @@
         <div class="container-fluid padding">
             <div class="row text-center">
                 <div class="col-md-6">
-                    <h4>Creators</h4>
+                    <h4 class="splitted">Twórcy</h4>
                     <hr class="light">
                     <p>Wronika Grzebień</p>
                     <p>Wronika Grzebień</p>
@@ -185,7 +386,7 @@
                     <p>Wronika Grzebień</p>
                 </div>
                 <div class="col-md-6">
-                    <h4>Contact</h4>
+                    <h4 class="splitted">Dane Kontaktowe</h4>
                     <hr class="light">
                     <p>111-111-111</p>
                     <p>harrycrew@email.com</p>
@@ -199,7 +400,7 @@
         </div>
     </footer>
 
-    <script src="/scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>
